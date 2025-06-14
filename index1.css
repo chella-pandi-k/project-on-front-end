@@ -1,0 +1,265 @@
+/* RESET BROWSER DEFAULTS */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body{
+  font-family: "Edu SA Hand", cursive;
+  font-optical-sizing: auto;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+   box-shadow:
+    inset 0 -3em 3em rgba(60, 245, 60, 0.3),
+    0 0 0 2px white,
+    0.3em 0.3em 1em rgb(200 0 0 / 60%);
+}
+.nav-links{
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+.nav-links a{
+  text-decoration: none;
+  color: goldenrod;
+}
+.nav-links a:hover{
+  text-decoration: underline;
+  color: rgb(255, 0, 0);
+}
+.nav-menu{
+  display: none;
+}
+
+.side-nav{
+  background-color: rgba(26, 15, 111, 0.85);
+  width:50%;
+  height:100%;
+  position: fixed;
+  top:0;
+  left:-60%;
+  padding: 20px;
+  color:aliceblue;
+  transition: 2s;
+}
+
+/* header */
+.header{
+  display: flex;
+  justify-content: center;
+  gap:60px;
+  padding: 60px;
+}
+
+.header-button{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.923);
+  color: white;
+  box-shadow: 10px;
+  cursor: pointer;
+}
+
+.side-nav-links{
+  margin-bottom: 20px;
+}
+.side-nav-links a{
+  font-size: large;
+  color: aliceblue;
+  text-decoration: none;
+  color:bisque
+}
+.side-nav-links a:hover{
+  text-decoration: underline;
+  color: rgb(0, 255, 251)
+}
+
+/* services */
+.service{
+  padding: 20px;
+}
+.services{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.services2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:20px;
+  padding: 10px;
+}
+
+.services2 div{
+  background-color: rgba(225, 225, 107, 0.4);
+  border-radius: 10px;
+  padding: 10px;
+}
+h1{
+  padding: 10px;
+}
+.new-arrival{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ padding: 25px;
+}
+.new-arrivals{
+  position: relative;
+  flex-basis: 20%;
+
+}
+.new-arrivals button{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 10px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top:50%;
+  left:18%;
+  border-radius: 20px;
+}
+
+/* news letter*/
+.news{
+display:flex;
+flex-direction: column;
+align-items: center;
+margin-top: 20px;
+}
+.news input{
+  padding: 11px;
+  width: 80vw;
+  margin-bottom: 10px;
+  border:solid black 3px;
+}
+.news button{
+  margin-top: 10px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/*footer */
+
+.footer {
+  text-align: justify;
+  border: 20;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+  width: 100%;
+  box-sizing: border-box; /* prevent padding from overflowing the width */
+}
+
+.product-section{
+  margin-top: 20px;
+}
+.product-search{
+  width: 80%;
+  border: solid black 2px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin:auto;
+
+}
+
+.product-search input{
+  border: none;
+  background-color: transparent;
+  width: 100%;
+}
+
+.product-search input:focus{
+  outline: none;
+}
+.products{
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.products-box{
+  text-align: center;
+  flex-basis: 20%;
+}
+
+.product-box image{
+  border-radius: 10px;
+}
+
+        .contact-box {
+             margin-top: 20px;
+             margin-bottom: 20px;
+             margin-left: 35%;
+            background-color: #000000;
+            padding: 30px 60px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            width: 400px;
+            height: 500px;
+            color: antiquewhite;
+        }
+
+        .contact-box h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-box label {
+            margin-top: 10px;
+            display: block;
+     
+        }
+
+        .contact-box input,
+        .contact-box textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-box button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-box button:hover {
+            background-color: #0056b3;
+        }
+@media screen and (max-width:650px) {
+  .nav-menu{
+    display:block;
+  }  
+  .nav-links{
+    display: none;
+  }
+  .services2{
+  flex-direction: column;
+}
+}
